@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/viewevents"
+        android:title="@string/event" />
+    <item
+        android:id="@+id/viewroutine"
+        android:title="@string/routine"/>
+    <item
+        android:id="@+id/viewsyllabus"
+        android:title="@string/syllabus"/>
+
+    <item
+        android:id="@+id/aboutus"
+        android:title="@string/aboutus"/>
+</menu>

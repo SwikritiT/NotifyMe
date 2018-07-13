@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/approve_student"
+    android:title="@string/approvestudents" />
+    <item
+        android:id="@+id/update_events"
+        android:title="@string/updateevents"/>
+    <item
+        android:id="@+id/update_routine"
+        android:title="@string/updateroutine"/>
+    <item
+        android:id="@+id/update_syllabus"
+        android:title="@string/updatesyllabus"/>
+    <item
+        android:id="@+id/aboutus"
+        android:title="@string/aboutus"/>
+
+</menu>
+
+

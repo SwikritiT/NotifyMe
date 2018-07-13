@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">NotifyMe</string>
+    <string name="notifyme">NotifyMe</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="admin">Admin</string>
+    <string name="student">Students</string>
+    <string name="noAccount">Dont have an account? Sign Up here</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="fadmin">For Admin</string>
+    <string name="fstudents">For Students</string>
+    <string name="fullname">full name</string>
+
+    <string name="semester">semester</string>
+    <string name="registrationno">Registration Number</string>
+    <string name="addevent">Add Event</string>
+    <string name="addsyllabus">Add Syllabus</string>
+    <string name="addroutine">Add Routine</string>
+    <string name="approvestudents">Approve Students</string>
+    <string name="updateevents">Update Events</string>
+    <string name="updateroutine">Update Routine</string>
+    <string name="updatesyllabus">Update Syllabus</string>
+    <string name="aboutus">About Us</string>
+    <string name="event">Event</string>
+    <string name="routine">Routine</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="name_event">Event Name</string>
+    <string name="eventdesc">Description</string>
+    <string name="eventtype">Type of Event</string>
+    <string name="eventlocation">Location</string>
+    <string name="eventdate">Date</string>
+    <string name="add">Add</string>
+
+    <string name="title_activity_main5">MainActivity5</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="search">Search</string>
+
+
+
+</resources>

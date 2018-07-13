@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.sweekritee.notifyme.Admin_Homepage">
+
+    <include
+        android:id="@+id/toolbar_ad"
+        layout="@layout/toolbarad_layout"
+        android:visibility="visible"
+       />
+
+    <Button
+        android:id="@+id/addevent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/addevent"
+        android:layout_below="@+id/toolbar_ad"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/addroutine_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/addevent_btn"
+        android:layout_below="@+id/addevent_btn"
+        android:layout_marginTop="42dp"
+        android:text="@string/addroutine" />
+
+    <Button
+        android:id="@+id/addsyllabus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/addroutine_btn"
+        android:layout_below="@+id/addroutine_btn"
+        android:layout_marginTop="41dp"
+        android:text="@string/addsyllabus" />
+
+
+</RelativeLayout>
+
