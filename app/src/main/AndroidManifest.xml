@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sweekritee.notifyme">
-
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,66 +12,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".firstPage" />
-        <activity android:name=".AdmORstd" >
+        <activity android:name=".firstPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".AdmORstd">
+
 
         </activity>
         <activity android:name=".SignUpAdmn" />
         <activity android:name=".SignUpStd" />
         <activity android:name=".Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+        </activity>
+        <activity android:name=".Admin_Homepage">
 
 
         </activity>
-        <activity android:name=".Admin_Homepage" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".NavigationBarAdmin">
 
         </activity>
-        <activity android:name=".NavigationBarAdmin" >
+        <activity android:name=".Add_Event">
+
+        </activity>
+        <activity android:name=".Add_Routine">
 
 
         </activity>
-        <activity android:name=".Add_Event" >
-
-
-        </activity>
-        <activity android:name=".Add_Routine" >
-
-
+        <activity android:name=".Add_Syllabus">
 
         </activity>
-        <activity android:name=".Add_Syllabus" >
+        <activity android:name=".Student_homepage">
 
 
 
-        </activity>
-        <activity android:name=".AboutUs" />
-        <activity android:name=".Student_homepage" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".NavigationBarStd">
-
-        </activity>
-        <activity android:name=".ViewRoutine" />
-        <activity android:name=".ViewSyllabus">
 
         </activity>
     </application>
