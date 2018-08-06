@@ -34,6 +34,8 @@ public class AdmORstd extends AppCompatActivity {
         Intent intent1=new Intent(this,Login.class);
         intent1.putExtra("extratext","1");
 
+
+
         startActivity(intent1);
 
     }
@@ -41,6 +43,7 @@ public class AdmORstd extends AppCompatActivity {
     public void openLoginStd(){
         Intent intent2=new Intent(this,Login.class);
         intent2.putExtra("extratext","0");
+        intent2.putExtra("extratext1","0");
 
         startActivity(intent2);
 
