@@ -2,6 +2,7 @@ package com.example.sweekritee.notifyme;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +15,8 @@ public class Student_homepage extends AppCompatActivity implements NavigationVie
     Toolbar toolbar_std;
     private DrawerLayout drawerLayoutstd;
     private ActionBarDrawerToggle stdToggle;
+    private FragmentTransaction fragmentTransaction;
+    private NavigationView navigationView_std;
 
 
 
@@ -22,7 +25,7 @@ public class Student_homepage extends AppCompatActivity implements NavigationVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.student_homepage);
         toolbar_std=(Toolbar) findViewById(R.id.toolbar_ad);
-        NavigationView navigationView_std=( NavigationView) findViewById(R.id.nav_std);
+        navigationView_std=( NavigationView) findViewById(R.id.nav_std);
         navigationView_std.setNavigationItemSelectedListener(Student_homepage.this);
         setSupportActionBar(toolbar_std);
         //getSupportActionBar().setIcon(getDrawable(R.drawable.menu_ad));
@@ -30,11 +33,15 @@ public class Student_homepage extends AppCompatActivity implements NavigationVie
         stdToggle=new ActionBarDrawerToggle(Student_homepage.this,drawerLayoutstd,toolbar_std,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayoutstd.addDrawerListener(stdToggle);
         stdToggle.syncState();
+        fragmentTransaction=getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.fragment_container_std, new ViewEvent());
+        fragmentTransaction.commit();
 
-        if(savedInstanceState==null) {
+
+       /* if(savedInstanceState==null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_std, new ViewEvent()).commit();
             navigationView_std.setCheckedItem(R.id.viewevents);
-        }
+        }*/
 
 
 
