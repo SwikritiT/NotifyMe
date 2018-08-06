@@ -36,11 +36,13 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="choose_picture">Choose Picture</string>
+    <string name="image_name">Enter a name</string>
 
     <string name="action_settings">Settings</string>
     <string name="logout">Log Out</string>
     <string name="search">Search</string>
-
 
 
 </resources>
