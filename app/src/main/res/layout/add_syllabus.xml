@@ -14,25 +14,63 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context="com.example.sweekritee.notifyme.add_syllabus"
+            android:background="@drawable/gradient"
             android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPrimaryDark"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+            <ImageView
+                android:id="@+id/syllabus_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+
+                />
+
+            <EditText
+                android:id="@+id/syllabus_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/image_name"
+
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/choose_syllabus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_style"
+                android:text="@string/choose_picture" />
+
+            <Button
+                android:id="@+id/upload_syllabus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_style"
+                android:text="@string/upload_picture" />
 
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/colorPrimaryDark"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/FAB_addsyllabus"

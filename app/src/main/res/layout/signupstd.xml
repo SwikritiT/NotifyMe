@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sweekritee.notifyme.SignUpStd"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar4"
@@ -26,51 +27,36 @@
         android:textAlignment="center"
         />
 
-    <EditText
-        android:id="@+id/fullname_std"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/fullname" />
-
-    <EditText
-        android:id="@+id/reg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/registrationno" />
 
 
-    <EditText
-        android:id="@+id/sem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/semester" />
+
 
     <EditText
         android:id="@+id/username_std"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginTop="20dp"
         android:inputType="textPersonName"
         android:hint="@string/username" />
+
     <EditText
         android:id="@+id/pass_std"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/password"/>
+
 
     <Button
         android:id="@+id/signup_std"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/signup" />
+        android:layout_marginTop="20dp"
+        android:text="@string/signup"
+        android:background="@drawable/button_style"/>
 
 
 </LinearLayout>

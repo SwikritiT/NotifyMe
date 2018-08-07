@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/viewsyllabus_fragment">
+    android:id="@+id/aboutus_fragment">
     <include
         android:id="@+id/toolbar_ad"
         layout="@layout/toolbarad_layout"
@@ -11,10 +11,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/syllabus"
+        android:text="@string/aboutus"
         android:textSize="50sp"
-        android:layout_marginTop="150dp"
-        android:layout_gravity="center"
         android:textAlignment="center"/>
 
 </LinearLayout>

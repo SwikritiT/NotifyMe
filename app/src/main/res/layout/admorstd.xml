@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.sweekritee.notifyme.AdmORstd"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/gradient">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -17,23 +18,31 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
+
+
     <Button
         android:id="@+id/adminbtn"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="150dp"
         android:layout_weight="0.08"
         android:text="@string/admin"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="25dp"/>
 
 
     <Button
         android:id="@+id/studentbtn"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/student"
         android:textSize="25sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_weight="0.08"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="25dp"
        />
 </LinearLayout>
