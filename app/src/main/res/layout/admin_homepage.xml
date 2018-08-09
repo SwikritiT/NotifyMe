@@ -64,7 +64,7 @@
         android:layout_height="match_parent"
         android:id="@+id/nav_ad"
         app:headerLayout="@layout/nav_header_ad"
-        app:menu="@menu/navigation_menu_ad"
+        app:menu="@menu/navigation_menu_std"
         android:layout_gravity="start"
         >
 
