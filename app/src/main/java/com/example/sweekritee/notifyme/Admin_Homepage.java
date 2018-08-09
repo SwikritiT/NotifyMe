@@ -1,6 +1,7 @@
 package com.example.sweekritee.notifyme;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -61,6 +62,38 @@ public class Admin_Homepage extends AppCompatActivity {
         });
 
 }
+
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+//            case R.id.viewevents:
+//                Intent intent=new Intent(Student_homepage.this,ViewEvent.class);
+//                startActivity(intent);
+//                break;
+            case R.id.viewroutine:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_std , new ViewRoutine()).commit();
+//                break;
+                Intent intent1=new Intent(Admin_Homepage.this,ViewRoutine.class);
+                startActivity(intent1);
+                break;
+            case R.id.viewsyllabus:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_std , new ViewSyllabus()).commit();
+//                break;
+                Intent intent2=new Intent(Admin_Homepage.this,ViewSyllabus.class);
+                startActivity(intent2);
+                break;
+
+            case R.id.aboutus:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_std , new Aboutus()).commit();
+//                break;
+                Intent intent3=new Intent(Admin_Homepage.this,Aboutus.class);
+                startActivity(intent3);
+                break;
+
+
+        }
+        drawerLayoutadm.closeDrawer(GravityCompat.START);
+        return true;
+    }
     @Override
     public void onBackPressed() {
         if(drawerLayoutadm.isDrawerOpen(GravityCompat.START)){
